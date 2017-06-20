@@ -1,1 +1,21 @@
-Test!
+<!DOCTYPE html>
+<html ng-app="portfolioApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Test!</title>
+        <script src="scripts/angular.min.js"></script>
+        <script src="scripts/angular-route.min.js"></script>
+        <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        
+        <script src="scripts/angular_main.js"></script>
+    </head>
+    <body>
+        <p>Links: <a href="#!/">Main</a> | <a href="#!/outpost">Outpost</a> | <a href="#!/sessionviewer">Session Viewer</a></p>
+        
+        <div ng-view="">
+
+        </div>
+    </body>
+</html>
