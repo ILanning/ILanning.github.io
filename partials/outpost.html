@@ -1,3 +1,24 @@
-<div>
-    Outpost!
+<div ng-controller="mainController">
+    <div class="bodyContainer">
+        Outpost!
+        <div ng-class="{on:onOff}" class="highlight">
+            Highlight this box
+        </div>
+        <button ng-click="onOff=!onOff">Toggle</button>
+
+        <style>
+            .highlight {
+            transition:0.5s linear all;
+            }
+            .highlight.on-add {
+            background:white;
+            }
+            .highlight.on {
+            background:yellow;
+            }
+            /*.highlight.on-remove {
+            background:black;
+            }*/
+        </style>
+    </div>
 </div>

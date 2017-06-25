@@ -1,11 +1,19 @@
-<div>
-    Main!
-    <div class="dropdown">
-        <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-        <ul class="dropdown-menu" aria-labelledby="dLabel">
-            <li><a href="#!/outpost">Outpost</a></li>
-            <li>Test1</li>
-            <li>Test2</li>
-        </ul>
+<div ng-controller="mainController">
+    <div class="bodyContainer">
+        Main!
+        <div class="dropdown">
+            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+            <ul class="dropdown-menu" aria-labelledby="dLabel">
+                <li><a href="#!/outpost">Outpost</a></li>
+                <li>Test1</li>
+                <li>Test2</li>
+            </ul>
+            
+        </div>
+        <div ng-if="bool" class="fade">
+            Fade me in out
+        </div>
+        <button ng-click="bool=true">Fade In!</button>
+        <button ng-click="bool=false">Fade Out!</button>
     </div>
 </div>
