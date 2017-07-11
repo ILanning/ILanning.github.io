@@ -25,6 +25,14 @@ body{
     display: flex;
     flex-direction: column;
 }
+select,
+select option{
+    color: black;
+}
+#threeCanvas{
+    margin: 0 auto;
+    width: 800px;
+}
 h1, h2, h3, h4, h5, h6, .nav > li > a, button{    
     font-family: 'Roboto', sans-serif;
 }

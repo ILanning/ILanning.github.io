@@ -1,13 +1,5 @@
 <div ng-controller="mainController">
     <div class="bodyContainer">
-        Major areas to cover:
-            -Art
-                Robots
-            -3D/Maya work
-              Model Viewer
-            -Web development
-              Time at Coding Dojo
-              Value of learning different stacks
         <div>
             <h3>
                 CommonCode  <a href="https://github.com/ILanning/CommonCode" target="_target">[Source]</a>
@@ -15,6 +7,22 @@
             <p>
                 &nbsp;&nbsp;&nbsp;&nbsp;A common library between all of my recent XNA projects, including Session Viewer, Outpost Update, and several small utility programs.  Building this library has taught me a ton about building generic, stable, easily maintained code (mostly through experience with the results of not doing so).  My next steps for this library involve implementing my Javascript and Ruby experience with tests and test driven development into the more realistic environment of the library.
             </p>
+        </div>
+        <div class="line verticalSpacing"></div>
+        <div>
+            <h3>
+                Model Viewer
+            </h3>
+            <p>Several 3D models from the Trilayer Tower Defense project.</p>
+            <select name="modelSelect" id="modelSelect" ng-model="modelPath" ng-change="loadFile(modelPath)">
+                <option value="Tower1">Laser Level 1</option>
+                <option value="Tower2">Laser Level 2</option>
+                <option value="Tower3">Laser Level 3</option>
+                <option value="Conjuration1">Conjuration Level 1</option>
+                <option value="Conjuration3">Conjuration Level 3</option>
+                <option value="Nexus" selected>Nexus</option>
+            </select>
+            <div id="threeCanvas"></div>
         </div>
     </div>
 </div>
