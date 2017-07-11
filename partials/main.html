@@ -1,19 +1,18 @@
 <div ng-controller="mainController">
-    <div class="bodyContainer">
-        Main!
-        <div class="dropdown">
-            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-            <ul class="dropdown-menu" aria-labelledby="dLabel">
-                <li><a href="#!/outpost">Outpost</a></li>
-                <li>Test1</li>
-                <li>Test2</li>
-            </ul>
-            
+    <div class="bodyContainer">        
+        <div>
+            <h3>
+                Myself
+            </h3>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;I'm a longtime hobbyist developer with several programming courses under my belt looking to break into the industry.  My first experiences with game programming came through DigiPen's high school course program.  I was fortunate enough to get to attend the program on the DigiPen campus itself, which exposed me to a number of the resources that the college provides.  Our teacher, Jeromy Walsh, started us off on the console with C++ covering concepts like templates, memory management, and pointers; briefly stopped over in Java; and spent the last half of the year in C# on the XNA framework.  The framwork provides fairly little beyond a well-built game loop and a simplification of graphics, audio, and input calls, which made it an amazing learning tool.  The second year there involved jumping to 3D and networking projects.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;Money concerns stopped me from being able to continue on to the college program itself, but I kept up programming on my own time while working for my parent's businesses.  I've also done some art, giving me experience with Maya, ZBrush, Photoshop, and a number of other art programs.  I've brought models through the modeling, texture-painting, and UV mapping/skinning processes, giving me experience with the technologies involved with those processes.  I've also done personal research to hone my programming abilities, delving a bit in to topics such as the mechanics of talking to RAM, shaders, processor caches, and branch prediction.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;Most recently I've attended Coding Dojo, a full-time 3 and a half month program that teaches full stack web development.  In this program I learned the Django library and Python; MongoDB, Express.js, Angular.js, and Node.js for Javascript; and Ruby/Ruby on Rails.  These languages are dramatically different from my mainstay of C# in many ways, and going through them gave me a fresh perspective on how to tackle problems in new ways.
+            </p>
         </div>
-        <div ng-if="bool" class="fade">
-            Fade me in out
-        </div>
-        <button ng-click="bool=true">Fade In!</button>
-        <button ng-click="bool=false">Fade Out!</button>
     </div>
 </div>

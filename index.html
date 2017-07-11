@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Roboto"> 
         
         <script src="scripts/angular_main.js"></script>
+        <script src="scripts/pagewide.js"></script>
         <link rel="stylesheet" type="text/css" href="css/portfolio.css">
     </head>
     <body>
@@ -19,13 +20,20 @@
         </div>
         <ul class="nav nav-justified" id="topNav">
             <li role="presentation" class=active><a href="#!/" id="topNavMainLink">Main</a></li>
-            <li role="presentation"><a href="#!/outpost">Outpost</a></li>
-            <li role="presentation"><a href="#!/sessionviewer">Session Viewer</a></li>
+            <li role="presentation"><a href="#!/games">Game Projects</a></li>
             <li role="presentation"><a href="#!/other">Other</a></li>
         </ul>
+        <div class="mainContainer" ng-view="">
 
-        <div ng-view="">
-
+        </div>
+        <div class="footer">
+            <div class="line"></div>
+            <p>Contact</p>
+            <ul class="footerLinks">
+                <li><span>Github:</span><a href="https://github.com/ILanning"> ILanning</a></li>
+                <li><span>Email:</span><a href="mailto:ianclanning@gmail.com"> ianclanning@gmail.com</a></li>
+                <li><span>Linkedin:</span><a href="https://www.linkedin.com/in/ian-lanning-3b56a9b5/"> Ian Lanning</a></li>
+            </ul>
         </div>
     </body>
 </html>

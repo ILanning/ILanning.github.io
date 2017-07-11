@@ -1,0 +1,120 @@
+<div class="mainContainer" ng-controller="mainController">
+    <div class="bodyContainer clearfix">
+        <div class="clearfix" id="outpost">
+            <div id="outpostIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#outpostIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#outpostIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="https://i.imgur.com/l3TYTzJ.png" target="_target">
+                        <img class="d-block img-fluid" src="https://i.imgur.com/l3TYTzJ.png" title="Game map view, with minimap window">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://i.imgur.com/bE3YUHE.png" target="_target">
+                        <img class="d-block img-fluid" src="https://i.imgur.com/bE3YUHE.png" title="Window testing screen">
+                        </a>
+                    </div>
+                </div>
+                <a class="left carousel-control" data-target="#outpostIndicators" role="button" data-slide="prev">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" data-target="#outpostIndicators" role="button" data-slide="next">
+                    <span class="icon-next" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <h3>
+                Outpost Update <a href="https://github.com/ILanning/OutpostUpdate" target="_target">[Source]</a>
+            </h3>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;An in progress remake of a citybuilder first released in 1994.  Most of the effort thus far has been put into developing a UI system that resembles the original game's use of Windows subwindows, without actually relying on the Windows API.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;An example of this window system is shown in one of the images to the right, displaying window ordering based on the last thing intereacted with, binding of window buttons to other objects, and multiple windows retrieving data from the same arbitrary data structure (In this case, a two dimensional string array).
+            </p>
+        </div>
+        <div class="line verticalSpacing"></div>
+        <div class="clearfix">
+            <div id="sessionViewerIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#sessionViewerIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#sessionViewerIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="https://i.imgur.com/C93wDQU.png" target="_target">
+                        <img class="d-block img-fluid" src="https://i.imgur.com/C93wDQU.png" title="In-session screen">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://i.imgur.com/6iy9oTX.png" target="_target">
+                        <img class="d-block img-fluid" src="https://i.imgur.com/6iy9oTX.png" title="Detail view on an object, featuring handmade scroll bar and word wrap function">
+                        </a>
+                    </div>
+                </div>
+                <a class="left carousel-control" data-target="#sessionViewerIndicators" role="button" data-slide="prev">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" data-target="#sessionViewerIndicators" role="button" data-slide="next">
+                    <span class="icon-next" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <h3>
+                Session Viewer <a href="https://github.com/ILanning/SessionViewer" target="_target">[Source]</a>
+            </h3>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;This is an older project that I've been updating to more modern frameworks, from the abandoned XNA to the open-source Monogame.  It allows you to explore the broad overview of a game session from the webcomic Homestuck.  All non-UI data is brought in through XML, allowing users to create their own sessions with relative ease.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;The key programming hurdles here were developing elegant ways to manage changes to graphical objects over time, as well as finding good ways to handle input into a semi-complicated UI when no real UI features were provided.  The program has a timeline feature which allows you to watch as things change in the session, and also allows you to skip around.  This means that animations had to have a way to be stopped and skipped gracefully, which was a challege to figure out.
+            </p>
+        </div>
+        <div class="line verticalSpacing"></div>
+        <div class="clearfix">
+            <div id="trilayerIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#trilayerIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#trilayerIndicators" data-slide-to="1"></li>
+                    <li data-target="#trilayerIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="https://i.imgur.com/1m1QIzr.png" target="_target">
+                        <img class="d-block img-fluid" src="https://i.imgur.com/1m1QIzr.png" title="In game, perspective camera">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://i.imgur.com/13cs6N0.png" target="_target">
+                        <img class="d-block img-fluid" src="https://i.imgur.com/13cs6N0.png" title="In game, orthographic camera">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://i.imgur.com/zZNBNCx.png" target="_target">
+                        <img class="d-block img-fluid" src="https://i.imgur.com/zZNBNCx.png" title="Detail shot of the building you needed to protect, along with a few towers">
+                        </a>
+                    </div>
+                </div>
+                <a class="left carousel-control" data-target="#trilayerIndicators" role="button" data-slide="prev">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" data-target="#trilayerIndicators" role="button" data-slide="next">
+                    <span class="icon-next" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <h3>
+                Tri-Layer Tower Defense
+            </h3>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;Another old XNA project, which unfortunately I haven't had time to update to a GitHub-ready state.  This was my first testbed for 3D graphics back in DigiPen's WaNIC program.  The logic in this case is purely two dimensional, but it still makes use of a 3D play field.  It's mostly a standard Tower Defense game, with the exeption that the enemies must path through 3 stacked layers in order to reach their goal.  There are laser towers which attack enemies with a visible beam, and conjuration towers which allow you to place roadblocks.  A path is calculated using A* whenever a tower is placed.  If you try to place a tower in a location that would block all paths, the game prevents the placement.
+            </p>
+        </div>
+    </div>
+</div>
