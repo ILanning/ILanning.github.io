@@ -1,15 +1,15 @@
 <div ng-controller="mainController">
     <div class="bodyContainer">
-        <div>
+        <div class="verticalSpacing">
             <h3>
                 CommonCode  <a href="https://github.com/ILanning/CommonCode" target="_target">[Source]</a>
             </h3>
             <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;A common library between all of my recent XNA projects, including Session Viewer, Outpost Update, and several small utility programs.  Building this library has taught me a ton about building generic, stable, easily maintained code (mostly through experience with the results of not doing so).  My next steps for this library involve implementing my Javascript and Ruby experience with tests and test driven development into the more realistic environment of the library.
+                &nbsp;&nbsp;&nbsp;&nbsp;A common library between all of my recent XNA projects, including Session Viewer, Outpost Update, and several small utility programs.  Building this library has taught me a ton about building generic, stable, easily maintained code (mostly through experience with the results of not doing so).  My next steps for this library involve building NUnit tests for it, to make use of my Javascript and Ruby experience with tests and test driven development.
             </p>
         </div>
         <div class="line verticalSpacing"></div>
-        <div>
+        <div class="verticalSpacing">
             <h3>
                 Model Viewer
             </h3>
@@ -17,12 +17,47 @@
             <select name="modelSelect" id="modelSelect" ng-model="modelPath" ng-change="loadFile(modelPath)">
                 <option value="Tower1">Laser Level 1</option>
                 <option value="Tower2">Laser Level 2</option>
-                <option value="Tower3">Laser Level 3</option>
+                <option value="Tower3" selected>Laser Level 3</option>
                 <option value="Conjuration1">Conjuration Level 1</option>
                 <option value="Conjuration3">Conjuration Level 3</option>
-                <option value="Nexus" selected>Nexus</option>
+                <option value="Nexus">Nexus</option>
             </select>
             <div id="threeCanvas"></div>
+        </div>
+        <div class="line verticalSpacing"></div>
+        <div class="clearfix">
+            <div id="worldBuilderIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#worldBuilderIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#worldBuilderIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="https://i.imgur.com/1xT9LSr.png" target="_target">
+                        <img class="d-block img-fluid" src="https://i.imgur.com/1xT9LSr.png" title="Final program">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="https://i.imgur.com/o550RBD.png" target="_target">
+                        <img class="d-block img-fluid" src="https://i.imgur.com/o550RBD.png" title="Initial crude wireframe">
+                        </a>
+                    </div>
+                </div>
+                <a class="left carousel-control" data-target="#worldBuilderIndicators" role="button" data-slide="prev">
+                    <span class="icon-prev" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" data-target="#worldBuilderIndicators" role="button" data-slide="next">
+                    <span class="icon-next" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <h3>
+                World Builder
+            </h3>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;A basic Windows Forms program built to create XML entities and collision data for another old game project.  The images on the left show an example of work in the final product, and the initial wireframe I built for myself (Don't worry, I wouldn't hand draw it like that if I did this today).
+            </p>
         </div>
     </div>
 </div>

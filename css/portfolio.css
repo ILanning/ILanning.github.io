@@ -31,7 +31,6 @@ select option{
 }
 #threeCanvas{
     margin: 0 auto;
-    width: 800px;
 }
 h1, h2, h3, h4, h5, h6, .nav > li > a, button{    
     font-family: 'Roboto', sans-serif;
@@ -134,11 +133,12 @@ input, button{
     .nav > :first-child > a{
         border-bottom-left-radius: 1em;
     }
-
     #topNav{        
         box-shadow: 0em 1.125em 0.5em -1em black;
     }
-
+    #threeCanvas{        
+        width: 800px;
+    }
     .footer > ul > li{
         display: inline-block;
         width: auto;
@@ -164,7 +164,9 @@ input, button{
     #topNav{        
         box-shadow: 0em 1em 0.5em -1em black;
     }
-    
+    #threeCanvas{        
+        width: 100%;
+    }    
     .bodyContainer{
         width: 100%;
         padding: 1em 0;

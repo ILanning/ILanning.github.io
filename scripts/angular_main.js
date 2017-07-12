@@ -37,9 +37,19 @@ var scene;
 
 function Start3js(parent, defaultFile){
         scene = new THREE.Scene();
-        var camera = new THREE.PerspectiveCamera(75, 8/5, 0.1, 1000);
+        var aspectRatio = 8/5;
+        var size = { x: 0, y: 0 };
+        if (document.body.clientWidth < 768){
+            size.x = document.body.clientWidth;
+        }
+        else {
+            size.x = 800;
+            console.log("Hit");
+        }
+        size.y = size.x * (1 / aspectRatio);
+        var camera = new THREE.PerspectiveCamera(75, aspectRatio, 0.1, 1000);
         var renderer = new THREE.WebGLRenderer();
-        renderer.setSize(800,500);//window.innerWidth, window.innerHeight);
+        renderer.setSize(size.x, size.y);
         parent.appendChild(renderer.domElement);
         renderer.setClearColor(0x333333);
 
